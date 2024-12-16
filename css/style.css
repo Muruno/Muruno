@@ -1,0 +1,134 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'ComfortaaLight', sans-serif;
+  font-weight: normal
+}
+body {
+  background: #313338
+}
+
+
+
+
+
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 60px;
+  color: #fff
+}
+h1 a {
+  font-size: 14px;
+  color: #aaa;
+  background: #555;
+  border-radius: 5px;
+  padding: 2px 5px;
+  border: 1px solid #dcdcdc;
+  text-decoration: none
+}
+h1 a:hover {
+  color: #111214;
+  text-decoration: underline
+}
+.slider {
+  width: 100%;
+  max-width: 1250px;
+  padding: 0 50px;
+  margin: 25px auto 0;
+  height: 650px;
+  position: relative;
+}
+.slider ul, .slider ul li {
+  width: 100%;
+  height: 100%
+}
+.slider ul {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px
+}
+.slider ul li {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-size: cover; /* semon #f98686 */
+  background-position: center;
+  color: #222;
+  font-family: serif;
+}
+.slider ul li:first-of-type {
+  background-image: url("https://media.discordapp.net/attachments/1175135944697974874/1317784521524908082/untitled.png?ex=6761ec39&is=67609ab9&hm=4998cef57ef5dcc74816b8a1dd55170de121ef30a602ff53e1fc327040ed880e&=&format=webp&quality=lossless&width=1214&height=683")
+}
+.slider ul li:nth-of-type(2) {
+  background-image: url("https://media.discordapp.net/attachments/1175135944697974874/1177292880742723674/untitled.png?ex=6761ae6f&is=67605cef&hm=7471082ebef2939452953c89d274a7f465b1d5f9c7bcfa7858eb93869cf9d6f5&=&format=webp&quality=lossless&width=1214&height=683")
+}
+.slider ul li:nth-of-type(3) {
+  background-image: url("https://media.discordapp.net/attachments/1175135944697974874/1175507369342554204/untitled.png?ex=6761c70c&is=6760758c&hm=1aea2010e7cee035b9bc8991f9924fb3646126b1f8ec60f29bf607a96ace6e99&=&format=webp&quality=lossless&width=1214&height=683")
+}
+.slider ul li:nth-of-type(4) {
+  background-image: url("https://media.discordapp.net/attachments/1175135944697974874/1175506681594122262/untitled.png?ex=6761c668&is=676074e8&hm=6b7c61e9ab8299bdb53d5d4cff71e7194c06492470567ca2a8cdbfd7ac77d445&=&format=webp&quality=lossless&width=1214&height=683")
+}
+.slider ul li:last-of-type {
+  background-image: url("https://media.discordapp.net/attachments/1175135944697974874/1175492299891937361/untitled.png?ex=6761b903&is=67606783&hm=f9ac7185545d833268749fa68de366083c16a5953e22caee7ae75352baeaafa3&=&format=webp&quality=lossless&width=1214&height=683")
+}
+.slider ul li:last-of-type {
+  background-image: url("https://media.discordapp.net/attachments/1175135944697974874/1175828633097601044/untitled.png?ex=6761a0bf&is=67604f3f&hm=42d7cff9d3a0920ae0310e8ac2839b4fec07acc7b0c19356799fe6d4d726c403&=&format=webp&quality=lossless&width=1214&height=683")
+}
+.slider ul li:last-of-type {
+  background-image: url("https://media.discordapp.net/attachments/1175135944697974874/1175492299891937361/untitled.png?ex=6761b903&is=67606783&hm=f9ac7185545d833268749fa68de366083c16a5953e22caee7ae75352baeaafa3&=&format=webp&quality=lossless&width=1214&height=683")
+}
+.slider .controll {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 44%;
+  border-bottom: 3px solid #333;
+  border-left: 3px solid #333;
+  cursor: pointer;
+  color: #333
+}
+.slider .controll:first-of-type {
+  transform: rotate(45deg);
+  left: 20px
+}
+.slider .controll:last-of-type {
+  transform: rotate(225deg);
+  right: 20px
+}
+.slider .controll:hover, .slider .controll.active {
+  border-color: #f98686 /* rose */
+}
+.slider ol {
+  text-align: center;
+  padding-top: 10px
+}
+.slider ol li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.slider ol .fa {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  font-weight: normall
+}
+.slider ol li:hover .fa:before, .slider ol li.active .fa:before {
+  content: "\f111"
+}
+/* .slider ul li.active {
+  z-index: 999;
+  left: 0
+} */
+@media(max-width: 490px) {
+  h1 {font-size: 45px}
+}
+@media(max-width: 350px) {
+  h1 {font-size: 25px}
+}
